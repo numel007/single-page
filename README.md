@@ -114,5 +114,16 @@ In this step you'll look at one section with a background image and some text co
 
 # Step 5 - index-5.html
 
+Creating cards...
 
+# Step 6 - index-6.html
 
+Using max-width and %...
+
+# Step 7 - index-7.html
+
+Create two columns with flex...
+
+# Step 8 - index-8.html
+
+Style the form and footer...
