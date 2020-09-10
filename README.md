@@ -323,4 +323,66 @@ Setting the flex property sets what proportion that element fills. Here the firs
 
 # Step 8 - index-8.html
 
-Style the form. 
+Time to look at the form. Forms have lots of details that need style attention. 
+
+This is the structure I used for the inputs. 
+
+```HTML
+<label>
+	<span>Name</span>
+	<input type="text">
+</label>
+```
+
+By putting the text of the label in a `<span>` tag I can target and style the label text seprately from the label as a whole which contains the text and the input. 
+
+To arrange the text above the input use flex and direction column.
+
+```CSS
+#contact label {
+	display: flex;
+	flex-direction: column;
+}
+```
+
+The inputs and text area should look the same. Might as well style both. Adding some padding will push the edge of the box away from the text that is input. 
+
+Be sure to style the border. 
+
+```CSS
+input, textarea {
+	border: 1px solid #000;
+	padding: 0.5em;
+	margin: 0 2em 0 0;
+	width: 20em;
+	font-size: 1em;
+}
+```
+
+The teaxtarea is a multiline input setting the height in em will let you set the height to display a number of full lines. 
+
+```CSS
+textarea {
+	height: 9em;
+	margin: 0 0 0 0;
+}
+```
+
+Using the box model, the teaxtarea should display 8 lines. That's height 9em, with padding of 0.5em. 
+
+The submit button. 
+
+```CSS
+form button {
+	width: auto;
+	font-size: 1em;
+	margin: 1em 0;
+	align-self: flex-end;
+	padding: 0.5em 1em;
+	background-color:rgb(0, 0, 0);
+	color: #fff;
+	border: none;
+}
+```
+
+The default button style adds a background and border. Be sure to style thesde. Give the button a contrasting color to make stand apart. You want people to see the button and know they can click it. 
