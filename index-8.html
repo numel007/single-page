@@ -1,280 +1,54 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Electronic Music: A short history</title>
-		<style>
-
-			body {
-				margin: 0;
-				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-				background-color: #1d1818;
-				line-height: 1.5;
-			}
-
-			nav, main > section {
-				overflow: auto;
-			}
-
-			main > section, main > footer {
-				min-height: 100vh;
-			}
-
-			/* Style the nav bar */
-			#nav {
-				justify-content: space-between;
-				align-items: baseline;
-				padding: 1em;
-				background-color: #1d1818;
-				color: #eee;
-				display: flex;
-			}
-
-			nav h1, ul {
-				margin: 0
-			}
-
-			nav a {
-				text-decoration: none;
-				color: #eee;
-			}
-
-			nav ul {
-				display: flex;
-				list-style: none;
-			}
-
-			nav ul a {
-				padding: 1em;
-				color: tomato;
-			}
-
-			nav ul a:hover {
-				color: pink;
-			}
-
-			#raymond-scott {
-				background-color: #26B63E;
-				background-image: url(images/scott-1.jpg);
-				background-size: cover;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				font-size: 4em;
-				color: #fff;
-			}
-
-			#raymond-scott > div {
-				position: relative;
-				left: -120px;
-				top: 120px;
-			}
-
-			#raymond-scott h2, #raymond-scott p {
-				margin: 0;
-				text-shadow: 0 0 20px #000000;
-			}
-
-
-			/* Create some cards in this section */
-			#robert-moog {
-				background-color: #26323f;
-			}
-
-			#robert-moog ul {
-				list-style: none;
-				margin: 0;
-				padding: 0;
-				display: flex;
-				justify-content: center;
-			}
-
-			#robert-moog > h2 {
-				margin: 1em;
-				font-size: 3em;
-				text-align: center;
-				color: #eee;
-			}
-
-			.card {
-				width: 400px;
-				margin: 1em;
-				background-color: #eee;
-				box-shadow: 0 0 22px rgba(0, 0, 0, 0.44);
-			}
-
-			.card img {
-				width: 100%;
-			}
-
-			.card h3 {
-				font-size: 2em;
-			}
-
-			.card h3, .card p {
-				margin: 1rem;
-			}
-
-			#wendy-carlos {
-				background-color: #5856D6;
-				background-image: url(images/carlos-0.jpg);
-				background-size: cover;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-
-			#wendy-carlos > div {
-				background-color:rgba(255, 255, 255, 0.65);
-				padding: 2em;
-				width: 75%;
-				max-width: 700px;
-			}
-
-			#wendy-carlos  h2 {
-				font-size: 4em;
-				margin: 0 0 1rem 0;
-				text-align: center;
-			}
-
-
-			/* Style this */
-			#suzanne-ciani {
-				background-color: #461c3b;
-				display: flex;
-				color: #fff;
-				background-image: url(images/sound-texture.jpg);
-				background-size: cover;
-			}
-
-			#suzanne-ciani > div {
-				display: flex;
-				justify-content: center;
-				width: 75%;
-				margin: auto;
-			}
-
-			#suzanne-ciani h2, #suzanne-ciani p {
-				margin: 0 0 1rem 0;
-			}
-
-			#suzanne-ciani h2 {
-				font-size: 2em;
-			}
-
-			#suzanne-ciani > div > div:nth-child(1) {
-				flex: 3;
-				margin: 0 2em 0 0;
-			}
-
-			#suzanne-ciani > div > div:nth-child(2) {
-				flex: 2;
-			}
-
-			#suzanne-ciani > div img {
-				width: 100%;
-				box-shadow:0 0 22px rgba(0, 0, 0, 0.44);
-			}
-
-
-			#contact {
-				background-color: #FF9500;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-			}
-
-			#contact > form {
-				display: flex;
-			}
-
-			#contact > form > div {
-				display: flex;
-				flex-direction: column;
-			}
-
-			#contact label {
-				display: flex;
-				flex-direction: column;
-			}
-
-			label {
-				margin: 1em 0;
-			}
-
-			label span {
-				margin: 1em 0;
-			}
-
-			input, textarea {
-				border: 1px solid #000;
-				padding: 0.5em;
-				margin: 0 2em 0 0;
-				width: 20em;
-				font-size: 1em;
-			}
-
-			textarea {
-				height: 9em;
-				margin: 0 0 0 0;
-			}
-
-			form button {
-				width: auto;
-				font-size: 1em;
-				margin: 1em 0;
-				align-self: flex-end;
-				padding: 0.5em 1em;
-				background-color:rgb(0, 0, 0);
-				color: #fff;
-				border: none;
-			}
-		</style>
+		<title>A worse Weight Lifting Tracker</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 
 		<main>
 			<nav id="nav">
-				<h1><a href="#">Electronic Music</a></h1>
+				<h1><a href="#">A Worse Weight Lifting Tracker</a></h1>
 				<ul>
-					<li><a href="#raymond-scott">Raymond Scott</a></li>
-					<li><a href="#robert-moog">Robert Moog</a></li>
-					<li><a href="#wendy-carlos">Wendy Carlos</a></li>
-					<li><a href="#suzanne-ciani">Suzanne Ciani</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#metrics">Metrics</a></li>
+					<li><a href="#socialize">Socialize</a></li>
+					<li><a href="#suzanne-ciani">empty</a></li>
 				</ul>
 			</nav>
 		
-			<section id="raymond-scott">
+			<section id="features">
 				<div>
-					<h2>Raymond Scott</h2>
-					<p>Some Text...</p>
+					<h2>Features</h2>
+					<p>Your conventional tracker has limited capabilities in terms of how many routines it can track. The aim of this application is to allow the users to have more control when they switch their program every 8-12 weeks.</p>
+					<p>This app has the capability to track standarized programs like StrongLifts 5x5, Starting Weight, and nSuns. Logged data is then plotted in a user-friendly graph that displays weight, rep, and RPE, and estimated 1RM progresion over time.</p>
 				</div>
 			</section>
 		
-			<section id="robert-moog">
+			<section id="features-cards">
 				<h2>Robert Moog</h2>
 				<ul>
 					<li class="card">
 						<img src="images/moog-0.jpg">
-						<h3>Bob Moog</h3>
+						<h3>Variety of Pre-programmed Routines</h3>
 						<p>The inovator...</p>
 					</li>
 					<li class="card">
 						<img src="images/moog-1.jpg">
-						<h3>Moog 100 series</h3>
+						<h3>Minimalist Styled Metrics Graphing</h3>
 						<p>Started the synthesis revolution...</p>
 					</li>
 					<li class="card">
 						<img src="images/moog-2.jpg">
-						<h3>The Artists</h3>
+						<h3>Lift Against Your Friends</h3>
 						<p>Used by countless artists...</p>
 					</li>
 				</ul>
 			</section>
 		
-			<section id="wendy-carlos">
+			<section id="metrics">
 				<div>
-					<h2>Wendy Carlos</h2>
+					<h2>Data Records and Analytics</h2>
 					<p>Wendy Carlos
 					Birth name Walter Carlos
 					Born November 14, 1939 (age 80)
@@ -293,15 +67,11 @@
 				</div>
 			</section>
 		
-			<section id="suzanne-ciani">
+			<section id="socialize">
 				<div>
 					<div>
-						<h2>Suzanne Ciani</h2>
-						<p>Suzanne Ciani (born June 4, 1946) is an American musician, sound designer, composer, and record label executive who
-						found early success in the 1970s with her innovative electronic music and sound effects for films and television
-						commercials. Her career has included works with quadraphonic sound. She has been nominated for a Grammy Award for Best
-						New Age Album five times. Her success with electronic music has her dubbed "Diva of the Diode" and "America's first
-						female synth hero".</p>
+						<h2>Lift Against Your Friends</h2>
+						<p>Filled text</p>
 					</div>
 					<div>
 						<img src="images/ciani-2.jpg">
