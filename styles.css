@@ -1,0 +1,167 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+#nav {
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1em;
+    background-color: #eae7dc;
+    color: #eee;
+    display: flex;
+    overflow: auto;
+}
+
+section {
+    overflow: auto;
+}
+
+nav > h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+    color: #8e8d8a;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul a {
+    padding: 1em;
+    color: #e98074;
+}
+
+nav ul a:hover {
+    color: #e85a4f;
+}
+
+/* What Causes Dough To Rise? */
+
+section#dough {
+    background-color: #ffffff;
+    background-image: url(images/dough.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #fff;
+    text-shadow: 3px 2px 2px black;
+    height: 30vw;
+    padding-top: 1vw;
+    padding-left: 5vw;
+}
+
+section#dough > div.rise {
+    width: 50vw;
+}
+
+section#dough > div.rise h2{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+section#dough > div.ferment {
+    align-self: flex-end;
+    width: 50vw;
+}
+
+section#dough > div.ferment h2 {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+/* Cards */
+
+#vs {
+    background-color: #eae7dc;
+}
+
+#vs ul {
+    list-style: none;
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#vs > h2 {
+    margin: 1em;
+    font-size: 3em;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+}
+
+.card {
+    width: 450px;
+    margin: 1em;
+    background-color: #eee;
+    box-shadow: 0 0 25px #8e8d8a;
+    border-radius: 15px;
+    border-style: solid;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.card h3 {
+    font-size: 2em;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.card h3, .card p {
+    margin: 1rem;
+}
+
+/* Wild Yeast */
+
+section#wild-yeast {
+    background-image: url(images/wild-yeast-2.jpg);
+    background-size: cover;
+    display: flex;
+    height: 50vw;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+div.transbox {
+    margin: 50px;
+    height: 65%;
+    background-color: rgba(142, 141, 138, 0.6);
+    border: 1px solid black;
+    border-radius: 15px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#wild-yeast h2 {
+    height: min-content;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: -15vw;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+#wild-yeast p {
+    flex: 1;
+    align-self: center;
+    margin-right: 5%;
+}
+
+#wild-yeast img {
+    border-radius: 15px;
+    align-self: center;
+    margin-right: 5vw;
+}
