@@ -81,50 +81,46 @@ section#dough > div.ferment h2 {
 
 #vs {
     background-color: #eae7dc;
+    padding: 50px 0;
+}
+
+#vs h2 {
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 1.5em;
 }
 
 #vs ul {
-    list-style: none;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
-#vs > h2 {
-    margin: 1em;
-    font-size: 3em;
-    text-align: center;
-    color: black;
-    text-shadow: 2px 2px 4px white;
+#vs img {
+    border-radius: 10px 10px 0 0;
 }
 
-.card {
-    width: 450px;
-    margin: 1em;
-    background-color: #eee;
-    box-shadow: 0 0 25px #8e8d8a;
+#vs ul li {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
     border-radius: 15px;
-    border-style: solid;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.44);
 }
 
-.card img {
-    width: 100%;
-    border-radius: 12px 12px 0px 0px;
+#vs ul li p {
+    padding: 0 10px;
 }
 
-.card h3 {
-    font-size: 2em;
-    text-align: center;
+#vs ul li a {
     align-self: flex-end;
-}
-
-.card h3, .card p {
-    margin: 1rem;
-}
-
-#vs a {
-    flex-flow: row;
-    align-self: flex-end;
-    background-color: black;
+    justify-self: flex-start;
+    padding-right: 10px;
 }
 
 /* Wild Yeast */
