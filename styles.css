@@ -2,6 +2,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1em;
     line-height: 1.5em;
+    overflow: auto;
 }
 
 #nav {
@@ -84,8 +85,6 @@ section#dough > div.ferment h2 {
 
 #vs ul {
     list-style: none;
-    /* margin: 0;
-    padding: 0; */
     display: flex;
     justify-content: space-evenly;
 }
@@ -122,13 +121,19 @@ section#dough > div.ferment h2 {
     margin: 1rem;
 }
 
+#vs a {
+    flex-flow: row;
+    align-self: flex-end;
+    background-color: black;
+}
+
 /* Wild Yeast */
 
 section#wild-yeast {
     background-image: url(images/wild-yeast-2.jpg);
     background-size: cover;
     display: flex;
-    height: 50vw;
+    height: 75vh;
     color: white;
     text-shadow: 2px 2px 2px black;
 }
@@ -142,16 +147,14 @@ div.transbox {
     align-self: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #wild-yeast h2 {
-    height: min-content;
-    margin-top: 8%;
-    margin-left: 5%;
-    margin-right: -15vw;
     font-size: 2.5em;
     font-weight: bolder;
+    padding-left: 1vw;
+    padding-top: 3vh;
 }
 
 #wild-yeast p {
@@ -164,4 +167,53 @@ div.transbox {
     border-radius: 15px;
     align-self: center;
     margin-right: 5vw;
+}
+
+/* Starter Recipe */
+
+#starter {
+    background-color: #eae7dc;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10vw;
+}
+
+#starter > div.starter-text {
+    border-radius: 15px;
+    border-style: solid;
+    padding: 5%;
+}
+
+/* Recipe */
+
+section#recipe {
+    background-image: url(images/shaping.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 3px 2px 2px black;
+    height: 75vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#recipe div {
+    background-color: rgba(142, 141, 138, 0.6);
+    padding: 0 10px;
+    border-radius: 25px;
+    padding: 0 2% 0 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#recipe h2 {
+    font-weight: bolder;
+    font-size: 2.5em;
+    text-decoration: underline;
+    align-self: center;
 }
