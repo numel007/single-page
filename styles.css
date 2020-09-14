@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lobster Two', cursive;
     font-size: 1em;
     line-height: 1.5em;
     overflow: auto;
@@ -35,7 +35,11 @@ nav ul {
 
 nav ul a {
     padding: 1em;
-    color: #e98074;
+    color: #e98704;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
 }
 
 nav ul a:hover {
@@ -52,7 +56,7 @@ section#dough {
     flex-direction: column;
     justify-content: flex-start;
     color: #fff;
-    text-shadow: 3px 2px 2px black;
+    text-shadow: 1px 2px 2px black;
     height: 30vw;
     padding-top: 1vw;
     padding-left: 5vw;
@@ -119,8 +123,14 @@ section#dough > div.ferment h2 {
 
 #vs ul li a {
     align-self: flex-end;
-    justify-self: flex-start;
-    padding-right: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #8e8d8a;
+    color: white;
+    border-radius: 17px 0 17px 0;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
 }
 
 /* Wild Yeast */
@@ -131,7 +141,7 @@ section#wild-yeast {
     display: flex;
     height: 75vh;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 1px 2px 2px black;
 }
 
 div.transbox {
@@ -177,10 +187,27 @@ div.transbox {
     padding: 0 10vw;
 }
 
+#starter h2 {
+    font-weight: bolder;
+    font-size: 2.5em;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+#starter p {
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+
 #starter > div.starter-text {
-    border-radius: 15px;
+    border-radius: 50px;
     border-style: solid;
     padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
 }
 
 /* Recipe */
@@ -213,3 +240,53 @@ section#recipe {
     text-decoration: underline;
     align-self: center;
 }
+
+/* Contact */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #eae7dc;
+}
+
+footer > h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 0.75em;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 0.5em;
+    border: 1px;
+    border-style: solid;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    width: 20vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.44);
+  }
+
+div.message textarea {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.44);
+}
+
+  button {
+    width: 100px;
+    padding: 0.75em;
+    background-color: #e85a4f;
+    font-size: 1em;
+    color: white;
+    margin: 1em;
+  }
