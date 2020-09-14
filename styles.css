@@ -202,12 +202,13 @@ div.transbox {
 }
 
 #starter > div.starter-text {
-    border-radius: 50px;
-    border-style: solid;
+    border-radius: 100px 0 100px 0;
+    border-style: dotted;
     padding: 5%;
     display: flex;
     flex-direction: column;
     align-content: stretch;
+    background-color: white;
 }
 
 /* Recipe */
@@ -247,6 +248,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #eae7dc;
+    height: 50vh;
 }
 
 footer > h2 {
