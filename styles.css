@@ -20,7 +20,7 @@ section {
 }
 
 nav > h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
 }
 nav a {
@@ -69,6 +69,7 @@ section#dough > div.rise {
 section#dough > div.rise h2{
     font-size: 2em;
     font-weight: bolder;
+    text-decoration: underline;
 }
 
 section#dough > div.ferment {
@@ -79,6 +80,7 @@ section#dough > div.ferment {
 section#dough > div.ferment h2 {
     font-size: 2em;
     font-weight: bolder;
+    text-decoration: underline;
 }
 
 /* Cards */
@@ -94,6 +96,7 @@ section#dough > div.ferment h2 {
     text-align: center;
     margin-top: -10px;
     margin-bottom: 1.5em;
+    text-decoration: underline;
 }
 
 #vs ul {
@@ -242,6 +245,10 @@ section#recipe {
     align-self: center;
 }
 
+#recipe p {
+    font-size: 1.25em;
+}
+
 /* Contact */
 
 footer {
@@ -254,6 +261,7 @@ footer {
 footer > h2 {
     text-align: center;
     font-size: 2em;
+    text-decoration: underline;
 }
 
 form {
